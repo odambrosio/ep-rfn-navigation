@@ -85,8 +85,8 @@
   <name>EP RFN Navigation</name>
   <description>This is the custom module (EP RFN Navigation) for running on a Digital Factory server.</description>
   <scm>
-    <connection>scm:dummy:uri</connection>
-    <developerConnection>scm:dummy:uri</developerConnection>
+    <connection>scm:git:git@github.com:odambrosio/ep-rfn-navigation.git</connection>
+    <developerConnection>scm:git:git@github.com:odambrosio/ep-rfn-navigation.git</developerConnection>
   </scm>
   <repositories>
     <repository>
