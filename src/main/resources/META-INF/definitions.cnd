@@ -25,7 +25,7 @@
 [rfnnt:epRfnRubric] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled, rfnmix:epRfnMenuItem
 
 [rfnnt:epRfnSection] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled, rfnmix:epRfnMenuItem
- - printType (weakreference, choicelist[nodes='/sites/systemsite/categories/section_printType/;jnt:category']']) mandatory
+ - printType (weakreference, choicelist[nodes='/sites/systemsite/categories/section_printType/;jnt:category']) mandatory
  - smallTitle (string) internationalized
 
 [rfnnt:epRfnSubject] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled, rfnmix:epRfnMenuItem
