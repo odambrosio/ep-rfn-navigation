@@ -5,29 +5,28 @@
 <rfnnt = 'http://www.rfnnt.jahia.ep.europa.eu'>
 
 [rfnnt:epRfnBreadcrumb] > jnt:content, jmix:studioOnly, rfnmix:epRfnComponent
- - currentNode (weakreference) mandatory autocreated internationalized
+ - currentNode (weakreference) mandatory internationalized
 
 [rfnnt:epRfnMenu] > jnt:content, jmix:studioOnly, rfnmix:epRfnComponent
  - startNode (weakreference)
  - depth (long) = '1' indexed=no
 
-[rfnmix:epRfnRightNavigationItem] mixin
-
-[rfnnt:epRfnRightLinkList] > jnt:content, mix:title
-
-[jnt:epRfnTopNavigationMenuItem] > jnt:content, rfnmix:epRfnComponent
-
-[rfnnt:epRfnTopNavigationMenu] > jnt:content, jmix:studioOnly, mix:title, rfnmix:epRfnComponent
- + * (jnt:epRfnTopNavigationMenuItem)
-
 [rfnnt:epRfnImageLink] > jnt:content, jmix:link, rfnmix:epRfnComponent, rfnmix:epRfnPicture
 
-[rfnnt:epRfnRubric] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled, rfnmix:epRfnMenuItem
+[rfnnt:epRfnRubric] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled
 
-[rfnnt:epRfnSection] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled, rfnmix:epRfnMenuItem
+[rfnnt:epRfnSection] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled
  - printType (weakreference, choicelist[nodes='/sites/systemsite/categories/section_printType/;jnt:category']) mandatory
  - smallTitle (string) internationalized
 
-[rfnnt:epRfnSubject] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled, rfnmix:epRfnMenuItem
+[rfnnt:epRfnSubject] > jnt:content, mix:title, rfnmix:epRfnComponent, rfnmix:epRfnBreadcrumbEnabled
  - position (string, choicelist) mandatory internationalized < 'left', 'right'
+
+[rfnnt:epRfnRightLinkList] > jnt:content, mix:title
+ + * (rfnnt:epRfnLink)
+
+[rfnnt:epRfnTopNavigationMenuItem] > jnt:content, rfnmix:epRfnComponent
+
+[rfnnt:epRfnTopNavigationMenu] > jnt:content, jmix:studioOnly, mix:title, rfnmix:epRfnComponent
+ + * (rfnnt:epRfnTopNavigationMenuItem)
 
